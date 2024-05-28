@@ -11,7 +11,7 @@ Then devo receber resultados com a palavra chave "Qualidade de software"
 Scenario: Busca no google com termo não encontrado
 Given que eu esteja na tela de busca do Google
 When eu realizar a busca do termo inexistente "125356jljkjllj" 
-Then devo receber o alerta "Sua pesquisa não encontrou nenhum documento corredsfsdfsdfdsfsdfdpondente"
+Then devo receber o alerta "Sua pesquisa não encontrou nenhum documento correspondente"
 
 Scenario: Resultados da busca com com texto alternativo das imagens
 Given que eu esteja na tela de busca do Google

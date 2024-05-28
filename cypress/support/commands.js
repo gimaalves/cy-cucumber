@@ -30,7 +30,6 @@ Cypress.Commands.add('login', (email, senha) => {
     cy.get('[data-testid="email"]').clear().type(email, {log: false})
     cy.get('[data-testid="senha"]').clear().type(senha, {log: false})
     cy.get('[data-testid="entrar"]').click()
-    cy.get('h1', {timeout: 10000}).should('contain', 'Bem Vindo')
 })
 
 Cypress.Commands.add('cadastrarProduto', (nome, preco, descricao, quantidade) => { 

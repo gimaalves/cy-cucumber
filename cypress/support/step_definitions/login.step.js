@@ -12,7 +12,7 @@ When(`eu inserir email e senha corretamente`, () => {
 });
 
 Then(`deve direcionar para o dashboard`, () => {
-    cy.get('h1').should('contain', 'Bem Vindo')
+    cy.get('h1', {timeout: 10000}).should('contain', 'Bem Vindo')
 });
 
 When(`eu inserir email {string} e senha {string}`, (email, senha) => {

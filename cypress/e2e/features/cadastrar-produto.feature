@@ -8,6 +8,7 @@ Para que eles possam ser disponibilizados aos clientes para compra.
 Contexto:
 Dado que eu esteja na tela de cadastro de produtos como admin
 
+@alto
 Esquema do Cenário: Cadastro de produtos com sucesso
 Quando eu inserir <nome>, <preco>, <descricao>, <quantidade>
 Entao deve validar o <nome> do produto na lista
