@@ -20,7 +20,7 @@ When('eu realizar a busca do termo inexistente {string}', (string) => {
 });
 
 Then('devo receber o alerta {string}', (string) => {
-	cy.get('.v3jTId', {timeout: 10000}).should('contain', string)
+	cy.get('.v3jTId', {timeout: 20000}).should('contain', string)
 });
 
 
@@ -30,7 +30,7 @@ When('eu realizar a busca do termo com imagem', () => {
 });
 
 Then('devo receber resultados com imagens e textos alternativos', () => {
-	cy.get('.cu-container', {timeout: 10000}).should('contain', 'Guitarra')
+	cy.get('.cu-container', {timeout: 20000}).should('contain', 'Guitarra')
 });
 
 
