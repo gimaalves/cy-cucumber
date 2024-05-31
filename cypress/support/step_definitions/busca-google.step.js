@@ -5,8 +5,8 @@ Given('que eu esteja na tela de busca do Google', () => {
 });
 
 When('eu realizar a busca do termo {string}', (string) => {
-	cy.get('#APjFqb').type(string+'{enter}')
-	//cy.get('.aajZCb > .lJ9FBc > center > .gNO89b').click()
+	cy.get('#APjFqb').type(string)
+	cy.get('.aajZCb > .lJ9FBc > center > .gNO89b').click()
 });
 
  Then('devo receber resultados com a palavra chave {string}', (string) => {
@@ -15,8 +15,8 @@ When('eu realizar a busca do termo {string}', (string) => {
 
 
 When('eu realizar a busca do termo inexistente {string}', (string) => {
-	cy.get('#APjFqb').type(string+'{enter}')
-	//cy.get('.aajZCb > .lJ9FBc > center > .gNO89b').click()
+	cy.get('#APjFqb').type(string)
+	cy.get('.aajZCb > .lJ9FBc > center > .gNO89b').click()
 });
 
 Then('devo receber o alerta {string}', (string) => {
@@ -25,8 +25,8 @@ Then('devo receber o alerta {string}', (string) => {
 
 
 When('eu realizar a busca do termo com imagem', () => {
-	cy.get('#APjFqb').type("guitarra{enter}")
-	//cy.get('.aajZCb > .lJ9FBc > center > .gNO89b').click()
+	cy.get('#APjFqb').type("guitarra")
+	cy.get('.aajZCb > .lJ9FBc > center > .gNO89b').click()
 });
 
 Then('devo receber resultados com imagens e textos alternativos', () => {
@@ -35,8 +35,8 @@ Then('devo receber resultados com imagens e textos alternativos', () => {
 
 
 When('eu realizar a busca do {string}', (string2) => {
-	cy.get('#APjFqb').type(string2+'{enter}')
-	//cy.get('.aajZCb > .lJ9FBc > center > .gNO89b').click()
+	cy.get('#APjFqb').type(string2)
+	cy.get('.aajZCb > .lJ9FBc > center > .gNO89b').click()
 });
 
 Then('devo receber resultados com a {string}', (string2) => {
