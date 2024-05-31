@@ -1,5 +1,9 @@
 import {Given,  When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
+afterEach(() => {
+	cy.screenshot()
+});
+
 Given('que eu esteja na tela de busca do Google', () => {
 	cy.visit('https://google.com.br/')
 });
@@ -20,7 +24,7 @@ When('eu realizar a busca do termo inexistente {string}', (string) => {
 });
 
 Then('devo receber o alerta {string}', (string) => {
-	cy.get('.v3jTId', {timeout: 20000}).should('contain', string)
+	cy.get('#rcnt', {timeout: 20000}).should('contain', string)
 });
 
 
