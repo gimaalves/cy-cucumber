@@ -15,7 +15,7 @@ Então deve direcionar para o dashboard
 
 @medio @smoke
 Cenário: Deve fazer login com sucesso usando exemplo de dados
-Quando eu inserir email "Gisselle.Schowalter@hotmail.com" e senha "teste"
+Quando eu inserir email "gzww@emailteste.com" e senha "1234"
 Entao deve direcionar para o dashboard
 
 @baixo
@@ -30,5 +30,5 @@ Entao deve direcionar para o dashboard
 
 Exemplos:
 | email | senha |
-| "Gisselle.Schowalter@hotmail.com" | "teste" |
-| "wjqg@emailteste.com" | "teste" |
+| "gzww@emailteste.com" | "1234" |
+| "Lera70@hotmail.com" | "HPV654MIqBcGghJ" |

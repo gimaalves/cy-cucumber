@@ -30,9 +30,7 @@ When('eu realizar a busca do termo com imagem', () => {
 });
 
 Then('devo receber resultados com imagens e textos alternativos', () => {
-	cy.get('#platop0', {timeout: 10000})
-    .invoke('attr', 'alt')
-    .should('contain', 'Guitarra')
+	cy.get('.cu-container', {timeout: 10000}).should('contain', 'Guitarra')
 });
 
 

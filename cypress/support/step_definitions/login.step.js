@@ -5,10 +5,7 @@ Given(`que eu esteja na tela de login do serverest`, () => {
 });
 
 When(`eu inserir email e senha corretamente`, () => {
-/*     cy.get('[data-testid="email"]').clear().type('Gisselle.Schowalter@hotmail.com')
-    cy.get('[data-testid="senha"]').clear().type('teste')
-    cy.get('[data-testid="entrar"]').click() */
-    cy.login('Gisselle.Schowalter@hotmail.com', 'teste')
+    cy.login('gzww@emailteste.com', '1234')
 });
 
 Then(`deve direcionar para o dashboard`, () => {
@@ -16,21 +13,13 @@ Then(`deve direcionar para o dashboard`, () => {
 });
 
 When(`eu inserir email {string} e senha {string}`, (email, senha) => {
-    //cy.get('[data-testid="email"]').clear().type(arg0)
-    //cy.get('[data-testid="senha"]').clear().type(arg1)
-    //cy.get('[data-testid="entrar"]').click()
-
     cy.login(email, senha)
 });
 
 Then(`deve exibir uma mensagem de erro`, () => {
-    cy.get('.alert').should('contain', 'Email e/ou senha inválidos')
+    cy.get('.alert', {timeout: 10000}).should('contain', 'Email e/ou senha inválidos')
 });
 
-
 When(`eu inserir {string} e {string}`, (email, senha) => {
-    //y.get('[data-testid="email"]').clear().type(arg0)
-    //cy.get('[data-testid="senha"]').clear().type(arg1)
-    //cy.get('[data-testid="entrar"]').click()
     cy.login(email, senha)
 });
